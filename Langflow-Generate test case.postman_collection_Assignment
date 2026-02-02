@@ -1,0 +1,124 @@
+{
+  "info": {
+    "_postman_id": "681c9279-62db-43f4-b1d2-489c62791a77",
+    "name": "Langflow-Generate test case",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49921875"
+  },
+  "item": [
+    {
+      "name": "LFtestcaseGen",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-Bp8yE-IalNgEYoKja6y4AiiN4tAAvEnOwwWIpI4mmto",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"chat\",\r\n    \"input_type\": \"chat\",\r\n    \"input_value\": \"Generate testcases for fund transfer\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/cc204089-8d10-4747-8b79-b0d7bd4fbc89",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "cc204089-8d10-4747-8b79-b0d7bd4fbc89"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LFtestcaseGen-customized",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-Bp8yE-IalNgEYoKja6y4AiiN4tAAvEnOwwWIpI4mmto",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"chat\",\r\n    \"input_type\": \"chat\",\r\n    \"input_value\": \"Generate testcases for fund transfer\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/cc204089-8d10-4747-8b79-b0d7bd4fbc89",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "cc204089-8d10-4747-8b79-b0d7bd4fbc89"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DocumentQA-Customized",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-4InSctACRens-mKhqOXqBn8jz3JeNvXyb5ixZu94B10",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"text\",\r\n    \"input_type\": \"text\",\r\n    \"input_value\": \"Get the values from the gender column and ssc_p column\",\r\n    \"tweaks\": {\r\n        \"File-6HdWA\": {\r\n            \"path\": [\r\n                \"C:\\\\Users\\\\arunk\\\\OneDrive\\\\Desktop\\\\GEN AI QA\\\\Placement_Data.csv\"\r\n            ]\r\n        },\r\n        \"Prompt Template-n7Vrt\": {\r\n            \"template\": \"Answer user's question based on the document below\\n\\n---\\n\\n{Document}\\n\\n----\\n\\nGet the values from the gender column and ssc_p column\"\r\n        },\r\n        \"GroqModel-VuXFi\": {\r\n            \"api_key\": \"GroqAPINew\",\r\n            \"temperature\": 0.1\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/336fdbc6-ed7a-4d0a-844e-837b6f921682",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "336fdbc6-ed7a-4d0a-844e-837b6f921682"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
